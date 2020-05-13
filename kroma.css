@@ -1,0 +1,230 @@
+/* MAIN */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+.mainBox {
+    font-size: .8rem;
+    line-height: 1.5;
+    background: #F0F2F0;
+    background: -webkit-linear-gradient(to left, #000C40, #F0F2F0);
+    background: linear-gradient(to left, #f1a7a7, #a3fff6);
+    padding: 0;
+    overflow-x: hidden;
+}
+#nav {
+    display: fixed;
+}
+.nav-social {
+    font-size: 1.75rem;
+    letter-spacing: 2vh;
+    color: dimgrey;
+}
+.nav-item {
+    padding: 0 0 0 3vh;
+}
+.nav-link {
+    font-size: 1rem;
+    padding-right: .5rem;
+}
+.navbar {
+    padding: 0 5vh;
+}
+.navbar a, .navbar-button {
+    color: #31282880;
+}
+.navbar a:hover, .navbar-button:hover {
+    color: #3E5151;
+    text-decoration: none;
+}
+.about-intro {
+    background: white;
+    padding: 5vh;
+}
+.intro-h5 {
+    text-align: -webkit-right;
+}
+.intro-h2 {
+    text-align: -webkit-right;
+    letter-spacing: 1vh;
+    font-size: 5rem;
+}
+.intro-h2 span {
+    text-align: -webkit-right;
+    letter-spacing: 1vh;
+    font-size: 5rem;
+    background: #F0F2F0;
+    background: -webkit-linear-gradient(to left, #F0F2F0, #000C40);
+    background: linear-gradient(to left, #a3fff6, #f1a7a7);
+}
+.imahe {
+    width: 90%;
+    margin: 5vh auto;
+    display: block;
+    box-shadow: inset 0 0 0 16px rgba(255,255,255,0.6), 0 1px 7px 1px #4c4c4c;
+}
+#gallery {
+    background: white;
+    padding: 7vh 0;
+}
+.gallery-h2 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+   font-family: 'Dancing Script', cursive; 
+} 
+
+.gallery-h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+.gallery-box {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-box:after {
+    clear: both;
+}
+.gallery-box li {
+    width: 35vh;
+    height: 35vh;
+    display: inline-block;
+    margin: 3vh;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 16px rgba(255,255,255,0.6), 0 1px 7px 1px rgba(0, 0, 0, 0.68);
+    transition: all 0.3s ease-in-out;
+}
+.imahe-1 { 
+    background-image: url(media/sample2.jpg);
+}
+
+.imahe-2 { 
+    background-image: url(media/sky.jpg);
+}
+
+.imahe-3 { 
+    background-image: url(media/sample3.jpg);
+}
+.box-info {
+    background: #d8dae985;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+    border: 1px solid #515151;
+}
+.box-info h3 {
+    color: #515151;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 2vh;
+    padding: 5vh 0 0 0;
+    min-height: 60%;
+}
+.box-info a {
+    display: block;
+    color: #1b1b1bb3;
+    font-weight: 700;
+    font-size: .7rem;
+    margin: 2vh;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.box-info a:hover {
+    color: #ffffff;
+}
+.box:hover {
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);
+}
+.box:hover .box-info {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.contact-us {
+    margin: 0 auto;
+    width: 50%;
+    padding: 5vh 0;
+}
+
+/* RESPONSIVE */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+.nav-social {
+    font-size: 1.25rem;
+    letter-spacing: 1vh;
+}
+.contact-us {
+    margin: 0 auto;
+    width: 85%;
+    padding: 2vh 0 5vh;
+}
+.contact-us h2 {
+    font-size: 1.5rem;
+}
+.intro-h2, .intro-h2 span {
+    font-size: 2rem;
+}
+.intro-h5 {
+    font-size: 1rem;
+}
+.limiter {
+    display: none;
+}
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+.intro-h2, .intro-h2 span {
+    font-size: 2.5rem;
+}
+.intro-h5 {
+    font-size: 1rem;
+}
+.limiter {
+    display: none;
+}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+.intro-h2, .intro-h2 span {
+    font-size: 2.5rem;
+}
+.intro-h5 {
+    font-size: 1rem;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.intro-h2, .intro-h2 span {
+    font-size: 4rem;
+}
+.intro-h5 {
+    font-size: 1rem;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+.intro-h2, .intro-h2 span {
+    font-size: 4.5rem;
+}
+.intro-h5 {
+    font-size: 1rem;
+}
+}
